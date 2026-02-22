@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SyncdIn</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body
+  <!-- AUTH SCREEN -->
+  ...
+  
+  <!-- APP SCREEN -->
+  ...
+
+  <!-- Tracking Modal -->
+  <div id="tracking-modal" class="modal hidden">
+    <div class="modal-box">
+      <h3>Allow SyncdIn to track your location?</h3>
+      <p>This helps us sync you with nearby artists and venues!</p>
+      <div class="modal-actions">
+        <button id="allow-tracking" class="primary-btn">Yes</button>
+        <button id="deny-tracking" class="secondary-btn">No Thanks</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SyncdIn</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- AUTH SCREEN -->
+  <section id="auth-screen" class="screen active">
+    <div class="auth-box">
+      <h1 class="logo">SyncdIn</h1>
+      <p class="tagline">Where artists connect.</p>
+
+      <input type="text" id="username" placeholder="Choose a username">
+
+      <div class="auth-actions">
+        <button id="signup-btn" class="primary-btn">Sign Up</button>
+        <button id="login-btn" class="secondary-btn">Login</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- APP SCREEN -->
+  <section id="app-screen" class="screen">
+
+    <header class="topbar">
+      <h2>SyncdIn</h2>
+      <div class="nav-actions">
+        <button id="home-btn">Home</button>
+        <button id="profile-btn">Profile</button>
+        <button id="logout-btn">Logout</button>
+      </div>
+    </header>
+
+    <!-- HOME VIEW -->
+    <div id="home-view" class="view">
+      <div class="create-post">
+        <textarea id="post-input" placeholder="What are you working on?"></textarea>
+        <button id="post-btn" class="primary-btn">Post</button>
+      </div>
+
+      <div id="feed" class="feed"></div>
+    </div>
+
+    <!-- PROFILE VIEW -->
+    <div id="profile-view" class="view hidden">
+      <h3>Your Profile</h3>
+      <p id="profile-username"></p>
+      <div id="profile-posts" class="feed"></div>
+    </div>
+
+  </section>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
