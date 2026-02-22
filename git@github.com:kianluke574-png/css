@@ -1,0 +1,25 @@
+style.css
+.nav-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.view.hidden {
+  display: none;
+}
+
+.post-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.delete-btn {
+  background: #322f3a;
+  color: #474469;
+}
+
+.like-btn {
+  background: #222;
+  color: white;
+}
